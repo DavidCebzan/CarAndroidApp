@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1D1E22"
+    tools:context=".AdaugaImagini">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#696969"
+        android:id="@+id/bar">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:itemIconTint="@color/selector"
+            android:id="@+id/toolbar">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentStart="true"
+                    android:src="@drawable/ic_close_color_foreground"
+                    app:itemIconTint="@color/selector"
+                    android:id="@+id/close"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="POST"
+                    android:id="@+id/post"
+                    android:textSize="18sp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="15dp"
+                    android:textColor="@color/selector"
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:scaleType="centerInside"
+            android:src="@mipmap/ic_launcher"
+            android:id="@+id/image_added"/>
+
+
+
+        <com.hendraanggrian.appcompat.widget.SocialAutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:hint="Make"
+            android:textColor="#EE9914"
+            android:textColorHint="#EE9914"
+            android:backgroundTint="#EE9914"
+            android:maxLines="5"
+            android:id="@+id/Mark"
+            app:socialFlags="hashtag|mention"
+            app:hashtagColor="@color/selector"/>
+
+
+        <com.hendraanggrian.appcompat.widget.SocialAutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:hint="Model"
+            android:textColor="#EE9914"
+            android:textColorHint="#EE9914"
+            android:backgroundTint="#EE9914"
+            android:maxLines="5"
+            android:id="@+id/Model"
+            app:socialFlags="hashtag|mention"
+            app:hashtagColor="@color/selector"/>
+        <com.hendraanggrian.appcompat.widget.SocialAutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:hint="Price"
+            android:inputType="number"
+            android:textColor="#EE9914"
+            android:textColorHint="#EE9914"
+            android:backgroundTint="#EE9914"
+            android:maxLines="5"
+            android:id="@+id/Price"
+            app:socialFlags="hashtag|mention"
+            app:hashtagColor="@color/selector"/>
+
+        <com.hendraanggrian.appcompat.widget.SocialAutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:hint="Year"
+            android:inputType="number"
+            android:textColor="#EE9914"
+            android:textColorHint="#EE9914"
+            android:backgroundTint="#EE9914"
+            android:maxLines="5"
+            android:id="@+id/Year"
+            app:socialFlags="hashtag|mention"
+            app:hashtagColor="@color/selector"/>
+
+        <com.hendraanggrian.appcompat.widget.SocialAutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:hint="Color"
+            android:textColor="#EE9914"
+            android:textColorHint="#EE9914"
+            android:backgroundTint="#EE9914"
+            android:maxLines="5"
+            android:id="@+id/Color"
+            app:socialFlags="hashtag|mention"
+            app:hashtagColor="@color/selector"/>
+
+
+
+        <com.hendraanggrian.appcompat.widget.SocialAutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:hint="Description..."
+            android:textColor="#EE9914"
+            android:textColorHint="#EE9914"
+            android:backgroundTint="#EE9914"
+            android:maxLines="5"
+            android:id="@+id/description"
+            app:socialFlags="hashtag|mention"
+            app:hashtagColor="@color/selector"/>
+
+    </LinearLayout>
+
+</LinearLayout>
